@@ -1,0 +1,83 @@
+header {
+  grid-area: h;
+  height: 10vh;
+  margin-top: 0%;
+  padding-left: 10vh;
+  display: flex;
+  align-items: flex-start;
+  font-family: "Ballet", cursive;
+  color: aliceblue;
+  font-size: 40px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/img/header_background.webp);
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+img {
+  padding-top: 5px;
+  max-width: 55vh;
+}
+
+button {
+  color: beige;
+  background-color: blueviolet;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  color: antiquewhite;
+  align-items: center;
+  border: solid 1px white;
+}
+
+.card p {
+  padding: 0;
+  margin-top: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  row-gap: 10px;
+  column-gap: 10px;
+  grid-area: m;
+  font-family: "Fredoka", sans-serif;
+  border: solid 2px rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  color: beige;
+  font-family: "Roboto", sans-serif;
+  grid-area: f;
+  border: solid 2px black;
+} 
+
+sidebar {
+  padding-left: 3vh;
+  color: aliceblue;
+  grid-area: b;
+  display: flex;
+  border: solid 1px rgb(250, 250, 250);
+  background-color: rgb(10, 6, 9);
+}
+
+.sidebar {
+  font-family: "Roboto", sans-serif;
+}
+
+.filter-section {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  display: grid;
+  grid-template-areas: "h h" "b m" "f f";
+  grid-template-columns: 10% 90%;
+  background-color: black;
+}
