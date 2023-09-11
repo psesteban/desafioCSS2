@@ -1,5 +1,5 @@
 header {
-  grid-area: h;
+  grid-area: header;
   height: 10vh;
   margin-top: 0%;
   padding-left: 10vh;
@@ -42,7 +42,7 @@ main {
   align-items: center;
   row-gap: 10px;
   column-gap: 10px;
-  grid-area: m;
+  grid-area: main;
   font-family: "Fredoka", sans-serif;
   border: solid 2px rgb(255, 255, 255);
   background-color: rgb(0, 0, 0);
@@ -53,14 +53,14 @@ footer {
   justify-content: space-evenly;
   color: beige;
   font-family: "Roboto", sans-serif;
-  grid-area: f;
+  grid-area: footer;
   border: solid 2px black;
 } 
 
 sidebar {
   padding-left: 3vh;
   color: aliceblue;
-  grid-area: b;
+  grid-area: bar;
   display: flex;
   border: solid 1px rgb(250, 250, 250);
   background-color: rgb(10, 6, 9);
@@ -77,7 +77,7 @@ sidebar {
 
 body {
   display: grid;
-  grid-template-areas: "h h" "b m" "f f";
+  grid-template-areas: "header header" "bar main" "footer footer";
   grid-template-columns: 10% 90%;
   background-color: black;
 }
